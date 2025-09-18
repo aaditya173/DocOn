@@ -1,0 +1,187 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .full-height {
+    position: relative; /* Enables layering for the overlay */
+    background-image: url(../img/bg01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /* Centers the background image */
+    max-height: 100vh;
+    height: 100vh;
+}
+
+/* Black Overlay */
+.full-height::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    z-index: 1; /* Ensures the overlay sits on top of the background */
+}
+
+/* Content Styling (Optional) */
+.full-height-content {
+    position: relative; /* Places content above the overlay */
+    z-index: 2; /* Ensures content is above the overlay */
+    color: white; /* For contrast against the dark background */
+    text-align: center; /* Center text */
+    padding: 20px;
+}
+
+table{
+    width: 100%;
+    padding-top: 5px;
+    
+}
+.heading-text{
+    color: white;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 63px;
+    margin-top: 15%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.sub-text2{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0;
+}
+
+
+.register-btn{
+    background-color: rgba(240, 248, 255, 0.589);
+    color: #345cc4;
+}
+
+
+.DocOn-logo{
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-left: 20px;
+    animation: transitionIn-Y-over 0.5s;
+}
+
+.DocOn-logo-sub{
+    color: rgba(255, 255, 255, 0.733);
+    font-size: 12px;
+
+}
+
+
+.nav-item{
+    color: rgba(255, 255, 255, 0.671);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    animation: transitionIn-Y-over 0.5s;
+}
+
+.nav-item:hover{
+    color: #f0f0f0;
+
+}
+.about-section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    color: #333;
+}
+
+.about-section h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #666;
+}
+/* How It Works Section */
+.how-it-works {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.how-it-works .steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.how-it-works .step {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.how-it-works .step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.how-it-works .step img {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+    height: 200px;
+}
+
+.how-it-works .step h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #345cc4;
+}
+
+.how-it-works .step p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.about-section-2 {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    color: #333;
+}
+
+.about-section-2 h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about-section-2 p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #666;
+}
